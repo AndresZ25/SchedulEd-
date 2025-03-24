@@ -1,6 +1,6 @@
 const db = require("../config/connection");
 const { Tutor } = require("../models");
-// const userSeeds = require("./userSeeds.json");
+
 const tutorSeeds = require("./tutorSeeds.json");
 const cleanDB = require("./cleanDB");
 

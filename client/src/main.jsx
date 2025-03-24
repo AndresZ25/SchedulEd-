@@ -19,19 +19,19 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <Error />, // Ensure to use errorElement, not error
+    errorElement: <Error />, 
     children: [
       {
         index: true,
-        element: <Home /> // Set Home as the default route
+        element: <Home /> 
       },
       {
         path: 'login',
-        element: <Login /> // Adjust path as needed
+        element: <Login /> 
       },
       {
         path: 'meettheteam',
-        element: <MeetTheTeam /> // Adjust path as needed
+        element: <MeetTheTeam /> 
       },
       {
         path: 'signup',
