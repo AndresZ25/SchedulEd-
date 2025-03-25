@@ -38,7 +38,7 @@ import {
   
     return (
       <ApolloProvider client={client}>
-        <div className="w-full h-screen bg-green-100">
+        <div className="w-full h-screen bg-blue-100">
           <Outlet />
           <div className='w-90 flex justify-center'>
             <Footer />
