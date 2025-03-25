@@ -9,7 +9,7 @@ const HomePage = () => {
      <Nav />
         <div className="pt-10 px-8 max-w-7xl mx-auto relative pb-64">
           
-          <div className="blue-box absolute hidden md:block w-full h-full bg-blue-800 transform scale-75 translate-x-1/2 translate-y-20 opacity-90"></div>
+          <div className="blue-box absolute hidden md:block w-full h-full bg-blue-800 transform scale-75 translate-x-1/2 translate-y-20 -rotate-12 opacity-90"></div>
           <div className="flex flex-col items-center md:flex-row">
             <div className="flex flex-col items-start w-full md:w-1/2 md:pr-16">
               <p className="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-900 to-blue-600">Time to get your education right ! Schedule up fast !</p>
