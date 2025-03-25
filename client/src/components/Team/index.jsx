@@ -3,7 +3,7 @@ import "./team.css";
 export default function Team() {
     return(
         <>
-        <section className="team-section w-100vw h-auto pt-7 pb-96 bg-green-100">
+        <section className="team-section w-100vw h-auto pt-7 pb-96 bg-blue-100">
         <div className="mx-auto text-center relative isolate">
           <div className="mx-auto max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">

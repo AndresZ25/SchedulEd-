@@ -48,8 +48,8 @@ const Login = (props) => {
     <div>
   <Nav />
 
-  <div className="w-[100] h-[100] flex items-center justify-center min-h-screen p-4 relative isolate">
-      <div className="w-full p-8 max-w-lg bg-green-800 rounded-3xl">
+  <div className="w-[100] h-[100] flex items-center justify-center min-h-screen p-4 bg-white relative isolate">
+      <div className="w-full p-8 max-w-lg bg-blue-800 rounded-3xl">
         <p className="text-center text-4xl font-bold tracking-tight mb-10 text-white">Login</p>
         <p className="text-lg text-center text-white mb-10">Enter your details to login</p>
         <form  onSubmit={handleFormSubmit} className="mt-10">
