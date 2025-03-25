@@ -11,7 +11,7 @@ export default function Nav() {
     if (Auth.loggedIn()) {
       return (
         <ul>
-          <li className="text-xl text-green-400 transition duration-150 ease hover:text-green-200">
+          <li className="text-xl text-blue-400 transition duration-150 ease hover:text-blue-200">
             <a href="/" onClick={() => Auth.logout()}>
             <FaSignOutAlt className="icon" />
               <span className='nav-full'>Logout</span>
@@ -22,13 +22,13 @@ export default function Nav() {
     } else {
       return (
         <ul className='flex'>
-          <li className="text-xl text-green-400 transition duration-150 ease hover:text-green-200 mx-4">
+          <li className="text-xl text-white -400 transition duration-150 ease hover:text-blue-200 mx-4">
           <Link to="/signup">
             <FaUserPlus className="icon" />
             <span className="nav-full">Signup</span>
           </Link>
           </li>
-          <li className="text-xl text-green-400 transition duration-150 ease hover:text-green-200 mx-4">
+          <li className="text-xl text-white -400 transition duration-150 ease hover:text-blue-200 mx-4">
           <Link to="/login">
             <FaSignInAlt className="icon" />
             <span className="nav-full">Login</span>
@@ -41,7 +41,7 @@ export default function Nav() {
 
 
   return (
-    <nav className="flex items-center justify-between h-24 p-8 bg-green-800 mx-auto">
+    <nav className="flex items-center justify-between h-24 p-8 bg-blue-800 mx-auto">
       <a className="company text-2xl font-extrabold text-white">SchedulEd</a>
       <div>
         <img src={Logo} className='comp-icon'></img>
@@ -50,23 +50,23 @@ export default function Nav() {
     <div className='nav-small flex flex-row justify-evenly items-center'>
     <Link to="/"  >
       <FaHome className='icon' />
-      <span className="nav-full text-xl text-green-400 transition duration-150 ease hover:text-green-200 mx-4">Home</span>
+      <span className="nav-full text-xl text-white -400 transition duration-150 ease hover:text-blue-200 mx-4">Home</span>
     </Link>
     <Link to="/meettheteam"  >
       <FaUsers className='icon' />
-      <span className="nav-full text-xl text-green-400 transition duration-150 ease hover:text-green-200 mx-4">Meet The Team</span>
+      <span className="nav-full text-xl text-white -400 transition duration-150 ease hover:text-blue-200 mx-4">The Team</span>
     </Link>
 
       {Auth.loggedIn() &&
     <Link to="/profile"  >
       <FaUser className='icon'/>
-      <span className="nav-full text-xl text-green-400 transition duration-150 ease hover:text-green-200 mx-4">My Profile</span>
+      <span className="nav-full text-xl text-white-400 transition duration-150 ease hover:text-blue-200 mx-4">My Profile</span>
     </Link>
 }
       {Auth.loggedIn() &&
     <Link to="/bookings"  >
       <FaCalendarAlt className="icon" />
-      <span className="nav-full text-xl text-green-400 transition duration-150 ease hover:text-green-200 mx-4">Schedule a Booking</span>
+      <span className="nav-full text-xl text-blue-400 transition duration-150 ease hover:text-blue-200 mx-4">Schedule Booking</span>
     </Link>     
 }
       {showNavigation()}
@@ -74,4 +74,3 @@ export default function Nav() {
   </nav>
   )
 }
-

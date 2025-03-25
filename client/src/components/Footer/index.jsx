@@ -3,7 +3,7 @@ import mtkLogo from "../../../public/assets/images/mtk.png";
 
 export default function Footer() {
     return (
-        <div className="w-[100vw] h-[25vh] bg-green-100 relative overflow-hidden mx-auto ">
+        <div className="w-[100vw] h-[25vh] bg-blue-100 relative overflow-hidden mx-auto ">
     <div className="footer-thang flex flex-row items-center mx-20 mt-16">
             <p className="text-xs text-center flex-1">
                 SchedulEd whose registered office is at Miami, Florida (“SchedulEd", “we”, “our” or “us”), 
