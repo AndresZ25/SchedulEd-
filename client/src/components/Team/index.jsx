@@ -1,7 +1,4 @@
 import "./team.css";
-import Andres from "../../../public/assets/images/andreszuniga_720.jpg";
-import Nat from "../../../public/assets/images/nat.jpeg";
-import Daniela from "../../../public/assets/images/daniela.jpg";
 
 export default function Team() {
     return(
@@ -24,8 +21,8 @@ export default function Team() {
           >
             <li>
               <img
-                src={Nat}
-                alt="Name"
+                src="/assets/images/nat.jpeg"
+                alt="Nataly Gonzalez"
                 className="max-h-[400px] object-cover object-top mx-auto w-full rounded-lg"
               />
               <div className="py-6">
@@ -39,8 +36,8 @@ export default function Team() {
             </li>
             <li>
               <img
-                src={Andres}
-                alt="Name"
+                src="/assets/images/andres.jpg"
+                alt="Andres Zuniga"
                 className="max-h-[400px] object-cover object-top mx-auto w-full rounded-lg"
               />
               <div className="py-6">
@@ -54,8 +51,8 @@ export default function Team() {
             </li>
             <li>
               <img
-                src={Daniela}
-                alt="Name"
+                src="/assets/images/daniela.jpg"
+                alt="Daniela Mena"
                 className="max-h-[400px] object-cover object-top mx-auto w-full rounded-lg"
               />
               <div className="py-6">
@@ -72,4 +69,4 @@ export default function Team() {
         </section>
         </>
     )
-};
+}
