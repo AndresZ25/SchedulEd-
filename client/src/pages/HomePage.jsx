@@ -19,9 +19,9 @@ const HomePage = () => {
             </div>
             <div className="relative w-full md:w-1/2 flex items-center justify-center">
               <div className="absolute opacity-100">
-                <img src="https://res.cloudinary.com/macxenon/image/upload/v1631562831/pngwing.com_2_xywqiv.png" alt="Decorative Image"/>
               </div>
-              <img src="https://res.cloudinary.com/macxenon/image/upload/v1631562832/pngwing.com_10_d2cssf.png" alt="Decorative Image" className="relative max-w-sm md:w-96 w-full h-full"/>
+              <img src="/assets/images/dog-grad.png" alt="Graduation Dog"
+              className="relative max-w-sm md:w-96 w-full h-full"/>
             </div>
           </div>
         </div>
