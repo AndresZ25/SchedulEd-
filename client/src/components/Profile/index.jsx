@@ -54,7 +54,7 @@ const Profile = () => {
     <div className="container mx-auto p-8"> 
     <h1 className="h1 text-5xl font-bold text-center mb-8">Your Profile</h1>
     {user ? (
-      <div className="bg-white p-6 rounded-lg shadow-md border-4 border-green-800">
+      <div className="bg-white p-6 rounded-lg shadow-md border-4 border-blue-800">
         <h2 className="h2 text-3xl font-semibold mb-4">Personal Information</h2>
         <div className="mb-6">
           <p className="text-lg font-medium">First Name: {user.firstName}</p>
@@ -62,7 +62,7 @@ const Profile = () => {
           <p className="text-lg font-medium">Email: {user.email}</p>
         </div>
 
-        <h3 className="h3 text-2xl font-semibold mb-4">Your Bookings</h3>
+        <h3 className="h3 text-2xl font-semibold mb-4">Heres Your Bookings</h3>
         {user.bookings.length > 0 ? (
           user.bookings.map((booking, index) => (
             <div
@@ -70,7 +70,7 @@ const Profile = () => {
               className="booking-cell bg-green-100 p-4 rounded-lg shadow-sm mb-4 border border-green-800 flex justify-between items-center"
             >
               <div className="book-text">
-                <p className="text-lg font-semibold text-green-800">
+                <p className="text-lg font-semibold text-blue-800">
                   Booking {index + 1} with: Andres Zuniga
                 </p>
                 <p className="text-lg">
@@ -95,7 +95,7 @@ const Profile = () => {
     )}
   </div>
         ) : (
-          <h1 className="text-center h-12 mt-24 text-3xl">Oopsie! Please login to access your booking calendar. Please {' '}
+          <h1 className="text-center h-12 mt-24 text-3xl">Ohhh No! Please login to access your booking calendar! {' '}
             <Link to="/login" className="font-bold">login</Link> or <Link to="/signup" className="font-bold">signup.</Link>
           </h1>
         )}

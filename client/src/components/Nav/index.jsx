@@ -11,7 +11,7 @@ export default function Nav() {
     if (Auth.loggedIn()) {
       return (
         <ul>
-          <li className="text-xl text-blue-400 transition duration-150 ease hover:text-blue-200">
+          <li className="text-xl text-white -400 transition duration-150 ease hover:text-blue-200">
             <a href="/" onClick={() => Auth.logout()}>
             <FaSignOutAlt className="icon" />
               <span className='nav-full'>Logout</span>
@@ -60,13 +60,13 @@ export default function Nav() {
       {Auth.loggedIn() &&
     <Link to="/profile"  >
       <FaUser className='icon'/>
-      <span className="nav-full text-xl text-white-400 transition duration-150 ease hover:text-blue-200 mx-4">My Profile</span>
+      <span className="nav-full text-xl text-white -400 transition duration-150 ease hover:text-blue-200 mx-4">My Profile</span>
     </Link>
 }
       {Auth.loggedIn() &&
     <Link to="/bookings"  >
       <FaCalendarAlt className="icon" />
-      <span className="nav-full text-xl text-blue-400 transition duration-150 ease hover:text-blue-200 mx-4">Schedule Booking</span>
+      <span className="nav-full text-xl text-white -400 transition duration-150 ease hover:text-blue-200 mx-4">Schedule Booking</span>
     </Link>     
 }
       {showNavigation()}
