@@ -108,7 +108,7 @@ const NewCalendar = () => {
     (day, month, timeSlot) => {
       const foundBooking = isBooked(day, month, timeSlot);
       if (foundBooking) return "bg-red-900 text-red-900 hover:red-900";
-      // line 112 was for testing because calendar wasn't blocking out with red colour
+    
       else if (!foundBooking) return "bg-zinc-700 text-white";
       return ``;
     },
@@ -147,18 +147,18 @@ const NewCalendar = () => {
     <>
       {Auth.loggedIn() ? (
         <>
-        <div className="w-[100vw] h-[75vh] bg-green-100 relative overflow-hidden mx-auto ">
+        <div className="w-[100vw] h-[75vh] bg-blue-100 relative overflow-hidden mx-auto ">
           <h1 className="text-5xl font-bold text-center pt-8">Schedule a Booking</h1>
-           <section className="flex flex-col justify-start align-start bg-gray-200 border border-green-800 border-2 w-90 m-8 rounded-xl h-auto">
+           <section className="flex flex-col justify-start align-start bg-gray-200 border border-black -800 border-2 w-90 m-8 rounded-xl h-auto">
            <div className="info-head flex flex-row items-center h-28 rounded-xl text-black ml-5 w-100">
              <span className="header-text font-bold text-center">
-               Available times for your Tutor:
+               Tutors time of availability:
              </span>
              <span className="tutor-name basis-full ml-3 font-bold text-center">
-               Tutor Name
+               Tutor Name : 
              </span>
            </div>
-           <div className="dates-box flex flex-row items-center h-28 bg-green-800">
+           <div className="dates-box flex flex-row items-center h-28 bg-blue-800">
              <div className="basis-12"></div>
    
              {days.map((day) => {
@@ -214,7 +214,7 @@ const NewCalendar = () => {
          </div>
          </>
       ) : (
-          <h1 className="text-center h-12 mt-24 text-3xl">Oopsie! Please login to access your booking calendar. Please {' '}
+          <h1 className="text-center h-12 mt-24 text-3xl">Ohh No! Please login to access your booking calendar. {' '}
             <Link to="/login" className="font-bold">login</Link> or <Link to="/signup" className="font-bold">signup.</Link>
           </h1>
       )}
